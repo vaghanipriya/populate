@@ -7,6 +7,14 @@ const state_Schema = mongoose.Schema(
             type: String,
             trim: true,
         },
+        state_pin: {
+            type: Number,
+            default: 0,
+        },
+        country: {
+            type: mongoose.Types.ObjectId,
+            ref: "country",
+        },
     },
     {
         timestamps: true,

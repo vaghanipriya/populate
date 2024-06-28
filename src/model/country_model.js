@@ -7,6 +7,11 @@ const country_Schema = mongoose.Schema(
             type: String,
             trim: true,
         },
+        country_pin: {
+            type: Number,
+            default:0
+        },
+       
     },
     {
         timestamps: true,

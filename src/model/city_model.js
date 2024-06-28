@@ -7,6 +7,10 @@ const city_Schema = mongoose.Schema(
             type: String,
             trim: true,
         },
+        city_pin: {
+            type: Number,
+            default:0
+        },
         state:{
             type:mongoose.Types.ObjectId,
             ref:"state"

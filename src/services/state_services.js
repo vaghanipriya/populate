@@ -5,7 +5,7 @@ const create_state_S = (data) => {
 };
 
 const get_state_S = () => {
-    return State.find()
+    return State.find().populate("country")
 };
 
 module.exports = {
